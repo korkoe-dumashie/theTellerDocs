@@ -1,0 +1,9 @@
+{
+    "label": "Fund Transfer",
+    "position": 5,
+    "link":{
+        "type": "generated-index",
+        "title":"Fund Transfer"
+    }
+
+}

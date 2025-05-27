@@ -1,0 +1,66 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@import "tailwindcss";
+
+:root {
+  --ifm-color-primary: #247EFC;
+  --ifm-color-primary-dark: #1D4ED8;      /* via-blue-700 */
+  --ifm-color-primary-darker: #2563EB;    /* from-blue-600 */
+  --ifm-color-primary-darkest: #1E40AF;   /* blue-800 for deeper tone */
+  --ifm-color-primary-light: #2563EB;     /* from-blue-600 */
+  --ifm-color-primary-lighter: #1D4ED8;   /* via-blue-700 */
+  --ifm-color-primary-lightest: #3730A3;  /* to-indigo-800 */
+  --ifm-h1-font-size: clamp(2rem, 5vw, 5em);
+  --docusaurus-highlighted-code-line-bg: #101828;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #247EFC;
+  --ifm-color-primary-dark: #0C66E4;      /* via-blue-700 */
+  --ifm-color-primary-darker: #2563EB;    /* from-blue-600 */
+  --ifm-color-primary-darkest: #1E40AF;   /* blue-800 */
+  --ifm-color-primary-light: #2563EB;     /* from-blue-600 */
+  --ifm-color-primary-lighter: #1D4ED8;   /* via-blue-700 */
+  --ifm-color-primary-lightest: #3730A3;
+  --docusaurus-highlighted-code-line-bg: #101828;
+}
+
+
+/* src/css/custom.css */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #1a1a1a; /* Adjust background color as needed */
+}
+
+.footer__logo {
+  margin-right: 2rem;
+}
+
+.footer__links {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.footer__link-item {
+  color: #ffffff;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.footer__link-item:hover {
+  opacity: 1;
+  text-decoration: none;
+}

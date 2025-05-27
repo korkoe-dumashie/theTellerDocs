@@ -1,0 +1,98 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary-dark) 100%);
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.features {
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.card__icon {
+  margin-right: 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.card__header h3 {
+  margin: 0;
+}
+
+.endpoints {
+  padding: 4rem 0;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.endpointBox {
+  margin-top: 2rem;
+  background: var(--ifm-background-color);
+  border-radius: var(--ifm-card-border-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  padding: 1.5rem;
+}
+
+.endpoint {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.endpointLabel {
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .features {
+    padding: 2rem 0;
+  }
+}
