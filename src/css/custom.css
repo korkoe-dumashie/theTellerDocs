@@ -7,6 +7,7 @@
 /* You can override the default Infima variables here. */
 
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --ifm-color-primary: #247EFC;
@@ -18,6 +19,8 @@
   --ifm-color-primary-lightest: #3730A3;  /* to-indigo-800 */
   --ifm-h1-font-size: clamp(2rem, 5vw, 5em);
   --docusaurus-highlighted-code-line-bg: #101828;
+
+  --ifm-font-family-base: 'Urbanist', sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

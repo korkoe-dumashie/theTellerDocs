@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Logo from '@site/static/img/logowithtext.svg';
+import Dashboard from '@site/static/img/Dashboard.svg';
 import Heading from '@theme/Heading';
 import { CiGlobe } from "react-icons/ci";
 import { LuShoppingBag, LuMenu , LuSmartphone} from "react-icons/lu";
@@ -45,8 +46,11 @@ function Hero() {
             </Link>
           </div>
         </div>
-      </div>
 
+      </div>
+        <div className="overflow-hidden rounded-3xl max-w-3/5 mx-auto mt-10">
+          <Dashboard className="w-full h-full" />
+        </div>
       {/* Background elements */}
       <div className="hidden lg:block absolute top-40 right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
       <div className="hidden lg:block absolute bottom-10 left-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl" />
@@ -316,8 +320,8 @@ function Footer() {
               &copy; {new Date().getFullYear()} 	PaySwitch Limited. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0 flex flex-wrap gap-4">
-              <a href="https://theteller.net/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="https://theteller.net/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+              <a href="https://theteller.net/privacy"  style={{ color:"#99A1AF" }} className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+              <a href="https://theteller.net/terms"  style={{ color:"#99A1AF" }} className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
               {/* <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a> */}
             </div>
           </div>
