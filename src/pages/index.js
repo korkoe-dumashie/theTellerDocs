@@ -7,6 +7,7 @@ import Layout from '@theme/Layout';
 import Logo from '@site/static/img/logowithtext.svg';
 import Logo2 from '@site/static/img/logo2.svg';
 import Dashboard from '@site/static/img/Dashboard.svg';
+import Dashboard from '@site/static/img/Dashboard.svg';
 import Heading from '@theme/Heading';
 import { CiGlobe } from "react-icons/ci";
 import { LuShoppingBag, LuMenu , LuSmartphone} from "react-icons/lu";
