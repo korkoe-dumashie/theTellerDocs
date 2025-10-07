@@ -25,7 +25,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'payswitch', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'theTellerDocV3', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -91,11 +91,11 @@ const config = {
             label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -104,7 +104,7 @@ const config = {
 
           alt: 'TheTeller Logo',
           src: 'img/logowithtext.svg',
-          href:'https://google.com',
+          href:'/',
         },
         links: [
           {
@@ -147,7 +147,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} PaySwitch Com. Ltd`,
       },
       prism: {
         theme: prismThemes.github,

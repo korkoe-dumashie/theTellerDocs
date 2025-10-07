@@ -5,6 +5,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Logo from '@site/static/img/logowithtext.svg';
+import Logo2 from '@site/static/img/logo2.svg';
+import Dashboard from '@site/static/img/Dashboard.svg';
 import Heading from '@theme/Heading';
 import { CiGlobe } from "react-icons/ci";
 import { LuShoppingBag, LuMenu , LuSmartphone} from "react-icons/lu";
@@ -19,13 +21,16 @@ import '../css/output.css';
 
 function Hero() {
   return (
-    <section className="pt-28 pb-16 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white">
+    <section className="pt-28 pb-16 bg-gradient-to-r from-[#f0f6ff] to-[#ecf1f8] text-white">
+    {/* <section className="pt-28 pb-16 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white"> */}
       <div className="container mx-auto sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight animate-fade-in">
-            Accept, process and manage payments with ease
+          <div className=" text-[24px] sm:text-[28px] md:text-4xl lg:text-5xl font-semibold mb-6 leading-tight text-[#1e1e1e] animate-fade-in">
+            Accept, process and manage <span className='bg-gradient-to-r from-[#5188D5] to-[#0066F5] bg-clip-text text-transparent'>
+                payments
+              </span> with ease
           </div>
-          <div className="text-lg sm:text-xl md:text-2xl mb-10 text-blue-100 animate-fade-in-delay">
+          <div className="text-lg sm:text-xl md:text-2xl mb-10 bg-gradient-to-r from-[#5188D5] to-[#0066F5] bg-clip-text text-transparent animate-fade-in-delay">
             Developer-friendly API for seamless payment integration
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-delay-2">
@@ -45,8 +50,11 @@ function Hero() {
             </Link>
           </div>
         </div>
-      </div>
 
+      </div>
+        <div className="overflow-hidden rounded-3xl max-w-3/5 mx-auto mt-10">
+          <Dashboard className="w-full h-full" />
+        </div>
       {/* Background elements */}
       <div className="hidden lg:block absolute top-40 right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
       <div className="hidden lg:block absolute bottom-10 left-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl" />
@@ -166,8 +174,8 @@ function Navbar() {
 
   return (
     <nav 
-      className={`fixed top-0 w-full z-50 transition-all  duration-300 ${
-        isScrolled ? ' bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 backdrop:blur-2xl shadow-md py-3' : 'bg-transparent py-5'
+      className={`flex justify-between items-center w-full h-20 px-10 fixed max-sm:px-5 max-sm:bg-white/70 z-20 transition-all duration-300 ${
+        isScrolled ? ' backdrop-blur-xs bg-gradient-to-r from-white/50 via-white/10 to-white/10 shadow-2xl shadow-black/5 before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/20 before:to-transparent before:pointer-events-none' : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -175,14 +183,14 @@ function Navbar() {
           <div className="flex items-center">
             {/* <CreditCard className="text-blue-600 mr-2" size={28} /> */}
             {/* <span className="text-xl font-bold text-blue-600">ExpressPay</span> */}
-            <Logo title="TheTeller Logo" />
+            <Logo2 title="TheTeller Logo" />
             <span className="ml-2 px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-md">DOCS</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a style={{ color:'white' }} href="https://payswitch.com.gh/" className="text-white cursor-pointer hover:underline underline-offset-6 transition-colors duration-200">Company</a>
-            <a style={{ color:'white' }} href="https://payswitch.com.gh/contact" className="text-white cursor-pointer hover:underline underline-offset-6 transition-colors duration-200">Get Support</a>
-            <Link to="/docs/overview" style={{ color:'white' }} className="text-white cursor-pointer hover:underline underline-offset-6 transition-colors duration-200 ">Developers</Link>
+            <a style={{ color:'#155DFC' }} href="https://payswitch.com.gh/" className="text-blue-600 cursor-pointer hover:underline underline-offset-6 transition-colors duration-200">Company</a>
+            <a style={{ color:'#155DFC' }} href="https://payswitch.com.gh/contact" className="text-blue-600 cursor-pointer hover:underline underline-offset-6 transition-colors duration-200">Get Support</a>
+            <Link to="/docs/overview" style={{ color:'#155DFC' }} className="text-blue-600 cursor-pointer hover:underline underline-offset-6 transition-colors duration-200 ">Developers</Link>
           </div>
           
           <div className="md:hidden">
@@ -316,8 +324,8 @@ function Footer() {
               &copy; {new Date().getFullYear()} 	PaySwitch Limited. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0 flex flex-wrap gap-4">
-              <a href="https://theteller.net/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="https://theteller.net/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+              <a href="https://theteller.net/privacy"  style={{ color:"#99A1AF" }} className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+              <a href="https://theteller.net/terms"  style={{ color:"#99A1AF" }} className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
               {/* <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a> */}
             </div>
           </div>
