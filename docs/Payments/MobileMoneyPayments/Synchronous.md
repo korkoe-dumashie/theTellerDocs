@@ -1,5 +1,5 @@
 ---
-title: Mobile Money Payments
+title: Synchronous Transactions
 sidebar_position: 6.4
 ---
 
