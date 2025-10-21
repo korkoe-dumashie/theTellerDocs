@@ -61,6 +61,7 @@ Collect the following data and send as a JSON payload to `/initiate`:
 | desc           | true     | string    | Short transaction narration text.                        |
 | amount         | true     | string    | Amount to charge.                                        |
 | redirect_url   | true     | string    | URL to redirect to when transaction is completed.        |
+| callback_url   | true     | string    | URL to receive the response from theTeller.              |
 | email          | true     | string    | Email of the customer.                                   |
 | API Key        | true     | string    | Your merchant API key provided when you create an account. |
 | apuiser        | true     | string    | Your merchant API username provided when you create an account. |
@@ -86,6 +87,7 @@ Cache-Control: no-cache
   "desc": "Payment Using Checkout Page",
   "amount": "000000000100",
   "redirect_url": "http://redirect_url/response",
+  "callback_url": "http://callback_url/response",
   "email": "customer_email"
 }
 ```
@@ -180,7 +182,26 @@ If successful, redirect the user to the `checkout_url`. Upon transaction complet
 1. Calls your `redirect_url` with URL-encoded response data and appends the transaction ID as query parameters.
 2. Sends an email to you and your customer (if enabled).
 
-### Sample Callback Response
+### Sample Redirect Response
 ```
 https://redirect_url?code=000&status=successful&reason=transaction20%successful&transaction_id=000000000000
+```
+### Sample Callback Response
+```json
+{
+   "code":"000",
+   "status":"approved",
+   "reason":"Approved: Transaction successful!",
+   "transaction_id":"0987654321",
+   "r_switch":"MTN",
+   "subscriber_number":"233240987654",
+   "amount":"0.10",
+   "original_amount":"0.1",
+   "surcharge_amount":"0",
+   "taxable_amount":"0",
+   "elevy_amount":"0",
+   "customer_id":"0241234567",
+   "order_id":"",
+   "merchant_data":"233251234567"
+}
 ```
