@@ -65,6 +65,7 @@ Collect the following data and send as a JSON payload to `/initiate`:
 | email          | true     | string    | Email of the customer.                                   |
 | API Key        | true     | string    | Your merchant API key provided when you create an account. |
 | apuiser        | true     | string    | Your merchant API username provided when you create an account. |
+| payment_method | false     | string   | Allowed values are <code>momo</code>  or <code>card</code> , default is <code>both</code>.                        |
 
 ### Step 2: Initialize the Payment
 Call our API with the payment details. Example:
