@@ -26,6 +26,8 @@ Cache-Control: no-cache
 | r-switch           | true     | string | Account issuer or network to be debited. Default is "FLT" for float.       |
 | desc               | true     | string | Text to be displayed as a short transaction narration.                     |
 | subscriber_number  | true     | string | Mobile money wallet to charge (10 - 12 digits).                             |
+| voucher_code       | false      | string    | REQUIRED, only if r-switch is VDF                                       |
+| callback_url       | true      | string    |                                        |
 
 To complete a successful payment request, send the following:
 
@@ -39,6 +41,7 @@ Authorization: Basic base64_encode('your API username:your API Key')
 Cache-Control: no-cache
 
 // Request Body
+
 {
   "amount": "000000000200",
   "processing_code": "000200",
@@ -47,6 +50,7 @@ Cache-Control: no-cache
   "merchant_id": "Your Merchant ID",
   "subscriber_number": "233243124824",
   "r-switch": "MTN"
+  "voucher_code:""
 }
 ```
 

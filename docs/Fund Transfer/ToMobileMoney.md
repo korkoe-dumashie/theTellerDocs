@@ -30,6 +30,7 @@ When a transfer request is initiated, the merchant transfer float account is deb
 | account_number | true | string | Recipient account number or wallet number for transfer transaction. |
 | account_issuer | true | string | The network the account belongs to. e.g <br />  "MTN" for MTN <br /> "ATL" for Airtel <br /> "ZPY" for Zeepay <br /> "GMY" for G-money <br /> "VDF" for Vodafone <br /> "TGO" for Tigo <br /> "GIP" for bank account transfer |
 | account_bank | true | string | The recipient bank account, e.g "GCB" for Ghana commercial bank. [See All Banks](#) |
+| voucher_code | false | int | REQUIRED if account_issuer is VDF (telecel)
 
 ## To Mobile Money
 
@@ -56,6 +57,7 @@ Cache-Control: no-cache
   "processing_code":"404000",
   "amount":"000000000020",
   "r-switch":"FLT",
+  "voucher_code": "telecel cash PIN"
   "desc":"Float Transfer Test",
   "pass_code":"Your Pass code"
 }

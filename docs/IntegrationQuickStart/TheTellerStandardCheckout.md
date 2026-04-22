@@ -2,7 +2,7 @@
 title: Theteller Standard Checkout
 sidebar_position: 4.1
 ---
-# TheTeller API Documentation
+<!-- # TheTeller API Documentation
 
 ## Overview
 
@@ -42,9 +42,9 @@ The TheTeller inline JS code method is the easiest way to accept payments on you
 ![TheTeller Inline JS Modal](/img/ttimg.png)
 
 Before proceeding, check our eCommerce and mobile app plugins to get started immediately on your platform of choice.  
-[View Plugins](https://dashboard.theteller.net/login)
+[View Plugins](https://dashboard.theteller.net/login) -->
 
-## TheTeller Standard Checkout
+# TheTeller Standard Checkout
 
 Accept payments quickly and securely using the standard method by calling the `/initiate` endpoint. The response includes a payment link to redirect users to a secure payment form. After completion, we call your `redirect_url` with payment response as query parameters.
 
